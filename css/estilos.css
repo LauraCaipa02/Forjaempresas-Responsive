@@ -1,0 +1,947 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+:root{
+  --red-color:#A40101;
+  --blue-color:#2CA3AB;
+  --grey-color:#C4C4C4;
+  --orange-color:#F3610E;
+  --darkblue-color:#1D1B45;
+  --lightblue-color:#a8dde0;
+  --dark-color:#191919;
+  --blue2-color:rgba(41, 82, 160, 0.972);
+  --white-color:#FFFFFF;
+  --darkorange-color:#da5f18;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+/*Estilos Index*/
+.headerhome{
+  display: flex;
+  flex-direction: column-reverse;
+  border-top: 3px solid var(--dark-color);
+  text-align: center;
+}
+
+.partuno{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: auto;
+}
+
+
+.partuno h3{
+  text-align: justify;
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+.prtuno i{
+  color:var(--white-color);
+  background-color: var(--darkorange-color);
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.prtuno{
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.log{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.cajalogo{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto auto;
+}
+
+.cajalogo img{
+  width: 60%;
+}
+.log i{
+  font-size:60px;
+  color:var(--darkorange-color);
+}
+.botonlog{
+  background-color: var(--blue2-color);
+  color: var(--white-color);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+  margin:auto;;
+  cursor: pointer;
+  border: none;
+}
+
+.botonlog i{
+  padding-left: 5px;
+}
+
+.franja{
+  position: absolute;
+  width: 80%;
+  border: none;
+  left:20%;
+  top:160px;
+  margin-top: 5px;
+}
+
+.bannerclass{
+  background-image: url(../img/2.\ medico.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+#textobanner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  height: 50%;
+}
+
+#textobanner h2{
+  color: var(--orange-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin:10px 8px ;
+}
+
+#textobanner h1{
+  color: var(--dark-color);
+  font-size: 28px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.btnpeq{
+  width: 100px;
+  font-size: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.franjan{
+  width: 100%;
+}
+
+#corona{
+  background-image: url(../img/4.\ covid.jpeg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.cajacorona{
+  display: flex;
+  background-image: url(..//img/Rectangle\ 26.png);
+  background-size:cover;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#sintomas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-left: 100px;
+}
+
+.iconotexto{
+  width: 30px;
+  height: 30px;
+  margin: 0px 15px;
+}
+
+.iconoparrafo{
+  width: 30px;
+  height: 30px;
+}
+
+#corona h3{
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  color: var(--darkblue-color);
+}
+
+#sintomas ul {
+  list-style-type: none;
+}
+.iconolista{
+  width: 20px;
+  height: 20px;
+  margin: 2px 10px;
+}
+#sintomas li{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--dark-color);
+  padding: 1px;
+  margin: 10px;
+}
+#ayuda{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-right: 100px;
+}
+.ayuda1{
+  text-align: justify;
+}
+
+.ayuda1 p{
+  width: 90%;
+  text-align: justify;
+  color: var(--dark-color);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.ayuda2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.imgcurso{
+  width: 150px;
+}
+
+.ayuda2 a{
+  margin-bottom: 40px;
+  color: var(--darkblue-color);
+  text-decoration: underline;
+}
+
+.secinfo{
+  background-color: var(--dark-color);
+  padding: 10px;
+  padding-top: 10px;
+  margin:0px;
+  border-bottom: 5px solid gray;
+  color: var(--white-color);
+} 
+a{
+  text-decoration: none;
+}
+.secinfo1{
+  background-color: var(--dark-color);
+  padding: 10px;
+  padding-top: 10px;
+  margin:0px;
+  border-top: 5px solid var(--dark-color);
+  border-bottom: 5px solid gray;
+  color: var(--white-color);
+} 
+
+.secinfo2{
+  background-color: var(--dark-color);
+  padding: 10px;
+  padding-top: 10px;
+  margin:0px;
+  border-bottom: 10px solid var(--white-color);
+  color: var(--white-color);
+} 
+
+/*Estilos login*/
+.lg{
+  background-image: url(../img/10.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin: 65px auto;
+}
+
+.contenedor {
+  width: 100%;
+}
+
+.boton1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: var(--darkblue-color);
+    border: 2px solid var(--blue-color);
+    border-radius: 10px;
+    color: var(--white-color);
+    padding: 5px 5px;
+    text-align: center;
+    width: 140px;
+    height: 34px;
+    margin-left: 360px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.contenedor2{
+  box-shadow: 1px  1px 6px var(--dark-color);
+  border-radius: 17px;  
+}
+
+.logo {
+  width: 100%;
+  height: 254px;
+  background-color: var(--lightblue-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+.logo img {
+  padding-top: 70px;
+}
+
+.logo h2{
+    font-weight:500;
+    font-size: 16px;
+    color: var(--dark-color);
+}
+
+.login {
+  background-color: var(--white-color);
+  width: 100%;
+  height: 301px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+
+}
+
+.formu{
+    height: 90%;
+    width: 90%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.npt{
+    width: 75%;
+    height: 38px;
+    background-color: rgba(143, 222, 228, 0.144);
+    border: 1px solid var(--blue-color);
+    border-radius: 14px;
+    padding-left: 10px;
+    box-sizing:border-box;
+}
+
+.lbl{
+    width: 70%;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    padding: 5px 30px; 
+    font-size: 16pt;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+#boton2{
+    width: 135px;
+    height: 34px;
+    font-family: 'Poppins',sans-serif;
+    background-color:var(--darkorange-color);
+    border: 2px solid var(--blue-color);
+    border-radius: 9px;
+    color:var(--white-color);
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 20px ;
+    font-size: 13px;
+    margin-bottom: 30px;
+    } 
+
+.formu a{
+    font-weight: 600;
+    font-size:12px;
+    cursor: pointer;
+    color: var(--dark-color);
+    text-decoration: underline;
+}
+
+/*Estilos dashboard*/
+#contdsh{
+  display: flex;
+}
+.bardsh{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-color);
+  flex-basis: 20%;
+  height: 100vh;
+  margin: auto;
+  font-size: 20px;
+}
+
+.grupodsh{
+  margin: 45px 0px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logoboton{
+  display: flex;
+  padding: 30px 0;
+  margin: 60px 0;
+}
+.botondsh{
+  background-color: var(--grey-color);
+  margin: 10px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border: 3px solid var(--darkorange-color);
+  border-radius: 10px;
+}
+
+.botondsh a{
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.contenidodsh{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(238, 237, 237, 0.74);
+  flex-basis: 80%;
+  max-height: 100vh;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: 95%;
+}
+
+.grupocontenido{
+  text-align: center;
+  position: relative;
+}
+
+#btnuser{
+  background: linear-gradient(80deg, rgb(172, 172, 172), rgb(235, 235, 235),rgb(172, 172, 172),rgb(172, 172, 172),rgb(235, 235, 235),rgb(172, 172, 172),rgb(172, 172, 172),rgb(235, 235, 235),rgb(172, 172, 172));
+  width: 16%;
+  margin-left: 1040px;
+  margin-top: 15px;
+  height: 60px;
+  border-radius: 10px;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnuser i{
+  color: var(--dark-color);
+  margin-right: 10px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px;
+  border: 3px solid var(--darkorange-color);
+}
+
+#btnuser a{
+  color: var(--dark-color);
+  margin-right: 10px;
+}
+
+.iconousuario{
+  width: 30px;
+}
+
+.welcome{
+  color: var(--darkorange-color);
+  font-size:24px;
+  margin: 50px;
+  padding-right: 50px;
+}
+
+.welcome h1{
+  font-weight: 500;
+}
+
+.search{ 
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+.search input{
+  width: 330px;
+  height: 30px;
+  border:none;
+  border-bottom: 2px solid var(--darkblue-color);
+  margin: 50px 10px;
+  padding: 0 10px;
+  background:none;
+  text-align: left;
+}
+
+.search i{
+  background-color: var(--darkblue-color);
+  margin: 0 5px ;
+  font-size: 14px;
+  width: 42px;
+  height: 28px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: var(--white-color);
+  border-radius: 5px;
+  border:3px solid var(--blue-color);
+}
+
+.imgsearch{
+  position: relative;
+}
+
+.imguerreros{
+  position: absolute;
+  right: 30px;
+  top:18px;
+  transform: rotate(10deg);
+  opacity: 0.6;
+  width: 350px;
+}
+
+.footerdhs{
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top:690px;
+}
+.footerdhs img{
+  width: 100%;
+}
+
+/*Estilos dashboardms*/
+.msg{
+  position: relative;
+}
+
+.trp{
+  background-color: #181616a4;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  position: absolute;
+  top:0px
+}
+
+.boxmsg{
+  background-color: var(--white-color);
+  width: 30%;
+  height:38%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  top:200px;
+  left: 550px;
+  border-radius: 5px;
+}
+
+.boxmsg img{
+  width: 300px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.boxmsg p{
+  margin: 10px;
+  font-size: 25px;
+  color: gray;
+}
+
+.btnsi{
+  background-color: var(--darkorange-color);
+  border: none;
+  color: var(--white-color);
+  width: 25%;
+  height: 45px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 3px solid var(--grey-color);
+}
+
+.btnsi:hover ,.btnno:hover{
+  box-shadow: 3px 3px 7px var(--dark-color);
+}
+
+.btnno{
+  background-color: var(--darkblue-color);
+  border: none;
+  color: var(--white-color);
+  width: 18%;
+  height: 45px;
+  border-radius: 3px;
+  margin: 5px;
+}
+/*Estilo formpacientes*/
+
+.encabezado{
+  background-color: var(--dark-color);
+  display: flex;
+  padding: 30px  5px;
+  justify-content: space-between;
+}
+
+.encabezado img{
+  margin: auto;
+}
+
+#btnform{
+  display: flex;
+}
+
+.btnformuno{
+  width:60px;
+  height:60px;
+  margin: 5px;
+  border-radius: 50%;
+  font-size:30px;
+  border: 2px solid var(--blue-color);
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
+.fotohead img{
+  width: 100%;
+  border-bottom: 6px solid var(--blue-color);
+}
+
+#tituno{
+  background-color: var(--darkblue-color);
+  text-align: center;
+  border-radius: 4px;
+  color:white;
+  font-weight: 100;
+  padding: 5px;
+  font-size: 22px;
+}
+
+#borform{
+border: 1px solid var(--darkblue-color);
+margin: 1px 1px 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+#cajaf{
+  display: flex;
+  justify-content: center;
+  background-color: var(--grey-color);
+  margin: 30px 30px 5px 30px;
+  border-radius: 10px;
+  border: 1px solid var(--darkblue-color);
+  padding: 15px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--blue-color);
+  width: 99%;
+  border: 1px solid var(--darkblue-color);
+  border-radius: 4px;
+  height: 30px;
+  margin: auto;  
+}
+
+.bar img {
+  width: 20px;
+  height: 20px;
+} 
+
+.texto{
+  position: relative;
+}
+.icono{
+  position: absolute;
+  left: -600px;
+  top: 14px;
+}   
+  
+.iconodos{
+  position: absolute;
+  left: -560px;
+  top: 14px;
+  }  
+  
+.bar1 {
+  font-size: 16px;
+  font-weight: 100;
+  }
+  
+.initial input{
+  width: 300px;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 10px 10px 10px 20px;
+  padding: 0 10px;
+  color: gray;
+}
+
+.datosp{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.datosp input{
+  width: 686px;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 10px 20px ;
+  padding: 0 10px;
+  color: gray;
+}
+
+.datosp select{
+  width: 690px;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 10px 18px ;
+  color: gray;
+  padding: 0 8px;
+}
+
+.datosp{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.pr input{
+  width: 25%;
+  height: 30px;
+  border: 1px solid var(--blue2-color);
+  margin: 30px 10px;
+  padding: 0 10px;
+  color: gray;
+}
+
+.pr select{
+  width:33%;
+  height: 30px;
+  border: 1px solid var(--blue2-color);
+  margin: 10px 15px 10px 20px;
+  color: gray;
+}
+
+.radio{
+  font-size: 16px;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;  
+}
+
+.opradio{
+  width: 10%;
+  display:flex ;
+  align-items: center;
+  justify-content: space-around;
+  margin:15px auto ;
+  padding: 10px;
+}
+
+#borform button{
+  margin: 10px auto 60px ;
+  background-color: var(--darkorange-color);
+  width: 8%;
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#ftform{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  align-items:flex-start;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+/*Estilos pacientes*/
+.pacien{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marco{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.navprin{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+.btnagregar{
+  background-color:var(--darkorange-color);
+  color: var(--white-color);
+  border:none;
+  padding: 10px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  height: 35px;
+  width: 130px;
+  font-size: 14px;
+}
+
+.btnagregar i{
+  padding-left: 5px;
+}
+
+.barbus input {
+  border: 2px solid var(--blue-color);
+  border-radius: 5px;
+  height: 35px;
+}
+
+.barbus i{
+  background-color: var(--darkblue-color);
+  font-size: 18px;
+  width: 42px;
+  height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: var(--white-color);
+  border-radius: 5px;
+  border:3px solid var(--blue-color);
+  cursor: pointer;
+}
+
+.titupac{
+  color: var(--darkblue-color);
+  margin-bottom: 20px;
+}
+
+.titupac h1{
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+table{
+  width: 100%;
+  border: 2px solid var(--blue-color);
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+
+th{
+  border: 2px solid var(--blue-color);
+  background-color: var(--darkblue-color);
+  color: var(--white-color);
+  padding: 10px;
+  font-size: 14px;
+}
+
+td{
+  border: 2px solid var(--blue-color);
+  background-color: var(--grey-color);
+  color: var(--darkblue-color);
+  padding: 10px;
+  font-size: 14px;
+}
+
+td i{
+  margin: 0 5px;
+}
+.btnazul{
+  background-color: var(--blue-color);
+  border:none;
+  border-radius: 3px;
+  padding: 5px 5px;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.btnrojo{
+  background-color: var(--red-color);
+  border:none;
+  border-radius: 3px;
+  padding: 5px 5px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+
+@media screen and (min-width:768px){
+  body{
+    background-color: aquamarine;
+  }
+}
+
+
+@media screen and (min-width:1024px){
+  body{
+    background-color: rgb(255, 253, 127);
+  }
+}
+
+
+@media screen and (min-width:1200px){
+  body{
+    background-color: rgb(127, 255, 129);
+  }
+}
