@@ -928,7 +928,7 @@ td i{
 
 @media screen and (min-width:768px){
   body{
-    background-color: aquamarine;
+    background-color: rgb(255, 127, 127);
   }
 }
 
@@ -943,5 +943,20 @@ td i{
 @media screen and (min-width:1200px){
   body{
     background-color: rgb(127, 255, 129);
+  }
+  .headerhome{
+    flex-direction: column;
+    padding: 0px 60px 0px 95px;
+  }
+  .partuno{
+    flex-direction: row;
+  }
+
+  .partuno h3{
+    padding-top: 15px;
+  }
+
+  .prtuno i{
+    margin: 0;
   }
 }
