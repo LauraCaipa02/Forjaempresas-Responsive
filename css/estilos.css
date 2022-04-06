@@ -19,7 +19,6 @@
 
 body {
   font-size: 16px;
-  background-color: white;
 }
 /*Estilos Index*/
 .headerhome{
@@ -27,13 +26,20 @@ body {
   flex-direction: column-reverse;
   border-top: 3px solid var(--dark-color);
   text-align: center;
+
 }
 
 .partuno{
   display: flex;
   flex-direction: column;
   padding: 10px;
-  margin: auto;
+  text-align: center;
+  margin: 1px auto;
+}
+
+.prtcontenido{
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 
@@ -43,6 +49,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   padding: 0 10px;
+  margin: 1px;
 }
 
 .prtuno i{
@@ -68,15 +75,14 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: center;
   margin: 1.5rem auto auto;
 }
 
 .cajalogo img{
-  width: 60%;
+  width: 70%;
 }
 .log i{
-  font-size:60px;
+  font-size:50px;
   color:var(--darkorange-color);
 }
 .botonlog{
@@ -84,8 +90,8 @@ body {
   color: var(--white-color);
   font-weight: bold;
   padding: 10px;
-  border-radius: 15px;
-  margin:auto;;
+  border-radius: 13px;
+  margin:10px auto;
   cursor: pointer;
   border: none;
 }
@@ -96,17 +102,18 @@ body {
 
 .franja{
   position: absolute;
-  width: 80%;
+  width: 70%;
   border: none;
-  left:20%;
-  top:160px;
+  left:25%;
+  top:90px;
   margin-top: 5px;
 }
 
 .bannerclass{
-  background-image: url(../img/2.\ medico.png);
+  background-image: url(../img/2.medico-movil.png);
   background-size:cover;
   background-repeat: no-repeat;
+  height: 220px;
 }
 
 #textobanner{
@@ -115,8 +122,8 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 70%;
-  height: 50%;
+  width: 50%;
+  height: 100%;
 }
 
 #textobanner h2{
@@ -139,8 +146,12 @@ body {
   border-radius: 10px;
   margin: 5px;
 }
-
 .franjan{
+  display: flex;
+  justify-content: center;
+  contain: content;
+}
+.franjan img{
   width: 100%;
 }
 
@@ -154,18 +165,20 @@ body {
 }
 .cajacorona{
   display: flex;
-  background-image: url(..//img/Rectangle\ 26.png);
+  flex-direction: column;
+  background: #d7d7d7da;
   background-size:cover;
+  contain: content;
   justify-content: space-around;
   width: 100%;
 }
 
 #sintomas{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-  margin-left: 100px;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
 }
 
 .iconotexto{
@@ -181,8 +194,9 @@ body {
 
 #corona h3{
   display: flex;
+  flex-direction:column;
   font-size: 20px;
-  align-items: center;
+  justify-content: center;
   color: var(--darkblue-color);
 }
 
