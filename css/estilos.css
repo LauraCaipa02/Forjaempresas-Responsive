@@ -65,6 +65,21 @@ body {
   align-items: center;
 }
 
+.botonlog{
+  background-color: var(--blue2-color);
+  color: var(--white-color);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 13px;
+  margin:10px auto;
+  cursor: pointer;
+  border: none;
+}
+
+.botonlog i{
+  padding-left: 5px;
+}
+
 .log{
   display: flex;
   align-items: center;
@@ -84,20 +99,7 @@ body {
 .log i{
   font-size:50px;
   color:var(--darkorange-color);
-}
-.botonlog{
-  background-color: var(--blue2-color);
-  color: var(--white-color);
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 13px;
-  margin:10px auto;
-  cursor: pointer;
-  border: none;
-}
-
-.botonlog i{
-  padding-left: 5px;
+  margin-bottom:25px;
 }
 
 .franja{
@@ -951,13 +953,108 @@ td i{
 
 
 @media screen and (min-width:768px){
-  body{
-    background-color: rgb(255, 127, 127);
+
+  .prtcontenido{
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
-  .partuno {
-    color: #A40101;
+
+  .prtuno {
+    margin-right: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .prtuno h3{
+    font-size: 14px;
+  }
+
+  .botonlog {
+    font-size: 14px;
+  }
+
+  .log i{
+    font-size:80px;
+    margin-top: 10px;
+  }
+
+  .franja{
+    left:25%;
+    top:155px;
+    margin-top: 5px;
+  }
+
+  .bannerclass{
+  height: 200px;
+  }
+
+  #textobanner{
+    width: 50%;
+    height: 75%;
+  }
+
+  #textobanner h2{
+    font-size: 25px;
+    margin:75px 5px 10px;
+  }
+
+  #textobanner h1{
+    font-size: 35px;
+    margin: 1px auto 15px;
+  }
+  
+  .btnpeq{
+    width:100%;
+    font-size: 14px;
+    border-radius: 12px;
+    margin:auto;
+    padding: 10px;
+  }
+
+  .cajacorona{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .iconotexto, .iconoparrafo{
+    width: 25px;
+    height: 25px;
+  }
+
+  #corona h3{
+font-size: 18px;
+  }
+
+  .iconolista{
+    width: 15px;
+    height: 15px;
+  }
+  #sintomas li{
+    font-size: 14px;
+  }
+
+  #ayuda{
+    margin-top: 13px;
+  }
+
+  .ayuda1 p{
+    font-size: 14px;
+  }
+
+  .imgcurso{
+    width: 120px;
+    margin: auto;
+  }
+
+  .ayuda2 a{
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 14px;
   }
 }
+
 
 
 @media screen and (min-width:1024px){
