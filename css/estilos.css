@@ -17,9 +17,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 16px;
-}
 /*Estilos Index*/
 .headerhome{
   display: flex;
@@ -41,7 +38,6 @@ body {
   display: flex;
   flex-direction: column-reverse;
 }
-
 
 .partuno h3{
   text-align: justify;
@@ -151,7 +147,6 @@ body {
 }
 .franjan{
   display: flex;
-  justify-content: center;
   contain: content;
 }
 .franjan img{
@@ -169,7 +164,7 @@ body {
 .cajacorona{
   display: flex;
   flex-direction: column;
-  background: #d7d7d7da;
+  background: #f1f1f1da;
   background-size:cover;
   contain: content;
   justify-content: space-around;
@@ -951,9 +946,8 @@ td i{
   cursor: pointer;
 }
 
-
 @media screen and (min-width:768px){
-
+/*Estilos index*/
   .prtcontenido{
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -1060,32 +1054,278 @@ font-size: 18px;
   }
 }
 
-
-
 @media screen and (min-width:1024px){
-  body{
-    background-color: rgb(255, 253, 127);
-  }
-}
+  /*Estilos index*/
 
-
-@media screen and (min-width:1200px){
-  body{
-    background-color: rgb(127, 255, 129);
-  }
   .headerhome{
     flex-direction: column;
-    padding: 0px 60px 0px 95px;
   }
+  
   .partuno{
+    flex-direction: row;
+    margin-right: 42px;
+    width: 70%;
+  }
+
+  .prtcontenido{
     flex-direction: row;
   }
 
   .partuno h3{
-    padding-top: 15px;
+    text-align: start;
+    font-size: 16px;
+    padding: 0 2px;
   }
 
   .prtuno i{
-    margin: 0;
+    margin: 0 1px;
   }
+  
+  .prtuno{
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .botonlog{
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 3rem;
+    width: 90%;
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+  
+  .botonlog i{
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+
+.log{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
+
+.cajalogo{
+  display: flex;
+  width: 30%;
+  justify-content: start;
+  margin: 0;
+}
+
+.cajalogo img{
+  width: 100%;
+  margin-left: 20px;
+}
+
+.log i{
+  font-size:60px;
+  margin-bottom:35px;
+}
+
+.franja{
+  width: 60%;
+  top:20px;
+  left:38%;
+}
+
+.bannerclass{
+  background-image: url(../img/2.\ medico.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+#textobanner{
+  width: 65%;
+  height: 100%;
+}
+
+#textobanner h2{
+  font-size: 40px;
+  margin:0 5px ;
+}
+
+#textobanner h1{
+  font-size: 50px;
+  margin: 5px;
+}
+
+.btnpeq{
+  width:100%;
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 10px auto;
+  padding: 5px 10px;
+}
+
+#sintomas{
+  width: 50%;
+}
+
+.iconotexto,.iconoparrafo{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+#corona h3{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.iconolista{
+  width: 20px;
+  height: 20px;
+}
+
+#sintomas li{
+  font-size: 16px;
+  padding: 1px;
+  margin: 10px 20px;
+}
+#ayuda{
+  width: 50%;
+  margin-right: 20px;
+}
+
+.ayuda1 p{
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.ayuda2{
+  margin-left: 50px;
+}
+
+.imgcurso{
+  width: 150px;
+}
+
+.ayuda2 a{
+  margin-bottom: 40px;
+font-size: 16px;
+}
+
+a{
+font-size: 16px;
+}
+
+}
+
+@media screen and (min-width:1200px){
+  .partuno{
+    margin-left: 18rem;
+    width: 80%;
+  }
+
+  .prtcontenido{
+    flex-basis: 80%;
+  }
+
+  .prtuno{
+    margin: 1rem  6rem;
+  }
+
+  .botonlogin{
+    margin-left: 9rem;
+    margin-right: 1rem;
+    flex-basis: 20%;
+    justify-content: end;
+  }
+
+  .botonlog{
+    width:70%;
+    font-size: 16px;
+    padding: 12px 3px;
+  }
+
+  .cajalogo img{
+    margin-left: 5rem;
+  }
+
+  .franja{
+    width: 60%;
+    top:20px;
+    left:38%;
+  }
+
+  .bannerclass{
+    height: 500px;
+  }
+
+  #textobanner{
+    width: 70%;
+  }
+
+  #textobanner h2{
+    font-size: 50px;
+    margin:1rem 1rem;
+  }
+  
+  #textobanner h1{
+    font-size: 60px;
+    margin: 1rem;
+  }
+
+  .btnpeq{
+    width:100%;
+    border-radius: 14px;
+    margin: 10px auto;
+    padding: 10px 15px;
+  }
+
+  #sintomas{
+    width: 40%;
+  }
+
+  .iconotexto,.iconoparrafo{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+  }
+
+  #corona h3{
+    font-size: 25px;
+  }
+
+  .iconolista{
+    width: 25px;
+    height: 20px;
+  }
+  
+  #sintomas li{
+    font-size: 18px;
+    padding: 1px;
+    margin: 1rem 4rem;
+  }
+  #ayuda{
+    width: 40%;
+    margin-right: 5rem;
+  }
+  
+  .ayuda1 p{
+    font-size: 18px;
+    margin-top: 1.5rem;
+  }
+  
+  .ayuda2{
+    margin-left: 6rem;
+  }
+  
+  .imgcurso{
+    width: 170px;
+  }
+  
+  .ayuda2 a{
+    font-size: 18px;
+  }
+
+  a{
+    font-size: 18px;
+    }
+    
+}
+
