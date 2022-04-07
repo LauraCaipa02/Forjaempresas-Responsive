@@ -46,7 +46,7 @@ body {
 .partuno h3{
   text-align: justify;
   color: var(--dark-color);
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 300;
   padding: 0 10px;
   margin: 1px;
@@ -113,7 +113,7 @@ body {
   background-image: url(../img/medico-movil.png);
   background-size:cover;
   background-repeat: no-repeat;
-  height: 220px;
+  width: 100%;
 }
 
 #textobanner{
@@ -122,29 +122,30 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 50%;
-  height: 100%;
+  width: 53%;
+  height: 60%;
 }
 
 #textobanner h2{
   color: var(--orange-color);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
-  margin:10px 8px ;
+  margin:5px 5px ;
 }
 
 #textobanner h1{
   color: var(--dark-color);
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
-  margin: 5px;
+  margin: 1px;
 }
 
 .btnpeq{
-  width: 100px;
-  font-size: 10px;
-  border-radius: 10px;
+  width:90%;
+  font-size: 6px;
+  border-radius: 5px;
   margin: 5px;
+  padding: 4px;
 }
 .franjan{
   display: flex;
@@ -175,53 +176,57 @@ body {
 
 #sintomas{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin: auto;
-  padding: 15px;
+  margin: 10px auto 0;
+  padding: 5px;
 }
 
 .iconotexto{
-  width: 30px;
-  height: 30px;
-  margin: 0px 15px;
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px;
 }
 
 .iconoparrafo{
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 #corona h3{
   display: flex;
-  flex-direction:column;
-  font-size: 20px;
+  font-size: 15px;
+  align-items: center;
   justify-content: center;
   color: var(--darkblue-color);
+  margin: auto;
 }
 
 #sintomas ul {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .iconolista{
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin: 2px 10px;
 }
 #sintomas li{
   display: flex;
-  align-items: center;
-  font-size: 18px;
+  align-items: flex-start;
+  font-size: 12px;
   font-weight: 300;
   color: var(--dark-color);
-  padding: 1px;
-  margin: 10px;
+  margin: 0 5px;
 }
 #ayuda{
   display: flex;
   flex-direction: column;
-  width: 30%;
-  margin-right: 100px;
+  width: 100%;
 }
 .ayuda1{
   text-align: justify;
@@ -231,25 +236,28 @@ body {
   width: 90%;
   text-align: justify;
   color: var(--dark-color);
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 300;
+  margin: 5px auto;
 }
 
 .ayuda2{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 50px;
+  margin:auto;
 }
 
 .imgcurso{
-  width: 150px;
+  width: 100px;
+  margin: auto;
 }
 
 .ayuda2 a{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: var(--darkblue-color);
   text-decoration: underline;
+  font-size: 12px;
 }
 
 .secinfo{
@@ -262,6 +270,7 @@ body {
 } 
 a{
   text-decoration: none;
+  font-size: 12px;
 }
 .secinfo1{
   background-color: var(--dark-color);
