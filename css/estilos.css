@@ -957,6 +957,7 @@ td i{
   .prtcontenido{
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-top: 5px;
   }
 
   .prtuno {
@@ -979,7 +980,7 @@ td i{
 
   .franja{
     left:25%;
-    top:155px;
+    top:150px;
     margin-top: 5px;
   }
 
@@ -1008,6 +1009,10 @@ td i{
     border-radius: 12px;
     margin:auto;
     padding: 10px;
+  }
+
+  .franjan{
+    width: 100%;
   }
 
   .cajacorona{
