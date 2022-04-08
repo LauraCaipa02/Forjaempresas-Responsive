@@ -467,7 +467,7 @@ a{
   background-color: rgba(238, 237, 237, 0.74);  
   background-size: cover;
   width: 100%;
-  height: 55vh;
+  height:70vh;
   overflow: hidden;
 }
 
@@ -569,81 +569,18 @@ a{
   display: flex;
   width: 100%;
   position: absolute;
-  top:53vh;
+  top:67vh;
 }
 .footerdhs img{
   width: 100%;
 }
 
-/*Estilos dashboardms*/
-.msg{
-  position: relative;
-}
-
-.trp{
-  background-color: #181616a4;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  position: absolute;
-  top:0px
-}
-
-.boxmsg{
-  background-color: var(--white-color);
-  width: 30%;
-  height:38%;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  top:200px;
-  left: 550px;
-  border-radius: 5px;
-}
-
-.boxmsg img{
-  width: 300px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.boxmsg p{
-  margin: 10px;
-  font-size: 25px;
-  color: gray;
-}
-
-.btnsi{
-  background-color: var(--darkorange-color);
-  border: none;
-  color: var(--white-color);
-  width: 25%;
-  height: 45px;
-  border-radius: 5px;
-  margin: 5px;
-  border: 3px solid var(--grey-color);
-}
-
-.btnsi:hover ,.btnno:hover{
-  box-shadow: 3px 3px 7px var(--dark-color);
-}
-
-.btnno{
-  background-color: var(--darkblue-color);
-  border: none;
-  color: var(--white-color);
-  width: 18%;
-  height: 45px;
-  border-radius: 3px;
-  margin: 5px;
-}
 /*Estilo formpacientes*/
 
 .encabezado{
   background-color: var(--dark-color);
   display: flex;
+  flex-direction: column;
   padding: 30px  5px;
   justify-content: space-between;
 }
@@ -654,17 +591,19 @@ a{
 
 #btnform{
   display: flex;
+  margin: auto;
 }
 
 .btnformuno{
-  width:60px;
-  height:60px;
+  width:30px;
+  height:30px;
   margin: 5px;
   border-radius: 50%;
-  font-size:30px;
+  font-size:15px;
   border: 2px solid var(--blue-color);
   color: var(--dark-color);
   cursor: pointer;
+  text-align: center;
 }
 
 .fotohead img{
@@ -673,6 +612,7 @@ a{
 }
 
 #tituno{
+  width: 100%;
   background-color: var(--darkblue-color);
   text-align: center;
   border-radius: 4px;
@@ -684,17 +624,19 @@ a{
 
 #borform{
 border: 1px solid var(--darkblue-color);
-margin: 1px 1px 20px;
+margin: 1px auto 20px;
 display: flex;
 flex-direction: column;
 justify-content: center;
+width: 97%;
 }
 
 #cajaf{
   display: flex;
   justify-content: center;
   background-color: var(--grey-color);
-  margin: 30px 30px 5px 30px;
+  width: 90%;
+  margin: 30px auto;
   border-radius: 10px;
   border: 1px solid var(--darkblue-color);
   padding: 15px;
@@ -710,11 +652,16 @@ justify-content: center;
   border: 1px solid var(--darkblue-color);
   border-radius: 4px;
   height: 30px;
-  margin: auto;  
+  margin: auto; 
+  width: 100%; 
+}
+
+form{
+  width: 100%;
 }
 
 .bar img {
-  width: 20px;
+  width: 15px;
   height: 20px;
 } 
 
@@ -723,26 +670,32 @@ justify-content: center;
 }
 .icono{
   position: absolute;
-  left: -600px;
-  top: 14px;
+  left: -32px;
+  top: 12px;
 }   
   
 .iconodos{
   position: absolute;
-  left: -560px;
-  top: 14px;
+  left: -20px;
+  top: 11px;
   }  
   
 .bar1 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
+  }
+
+  .initial{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 20px ;
   }
   
 .initial input{
-  width: 300px;
+  width:100%;
   height: 30px;
   border: 1px solid #2ca3abd5;
-  margin: 10px 10px 10px 20px;
+  margin: 15px auto;
   padding: 0 10px;
   color: gray;
 }
@@ -751,11 +704,10 @@ justify-content: center;
   width: 100%;
   display: flex;
   flex-wrap:wrap;
-  justify-content: center;
 }
 
 .datosp input{
-  width: 686px;
+  width: 100%;
   height: 30px;
   border: 1px solid #2ca3abd5;
   margin: 10px 20px ;
@@ -764,10 +716,10 @@ justify-content: center;
 }
 
 .datosp select{
-  width: 690px;
+  width: 100%;
   height: 30px;
   border: 1px solid #2ca3abd5;
-  margin: 10px 18px ;
+  margin: 10px 20px ;
   color: gray;
   padding: 0 8px;
 }
@@ -779,17 +731,31 @@ justify-content: center;
   justify-content: space-between;
 }
 
+.pr{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.pr label{
+  width: 100%;
+  height: 30px;
+  margin: 10px auto ;
+  padding: 0 5px;
+  color: gray;
+}
+
 .pr input{
-  width: 25%;
+  width: 100%;
   height: 30px;
   border: 1px solid var(--blue2-color);
-  margin: 30px 10px;
+  margin: 10px 20px ;
   padding: 0 10px;
   color: gray;
 }
 
 .pr select{
-  width:33%;
+  width:100%;
   height: 30px;
   border: 1px solid var(--blue2-color);
   margin: 10px 15px 10px 20px;
@@ -801,9 +767,14 @@ justify-content: center;
   color: gray;
   display: flex;
   flex-direction: column;
-  margin: 10px 20px;  
+  margin: 10px 20px; 
+  width: 100%;
 }
-
+.opradio{
+width: 100%;
+display: flex;
+flex-wrap:wrap;
+}
 .opradio{
   width: 10%;
   display:flex ;
