@@ -612,19 +612,20 @@ a{
 }
 
 #tituno{
-  width: 100%;
+  width: 98%;
   background-color: var(--darkblue-color);
   text-align: center;
   border-radius: 4px;
   color:white;
   font-weight: 100;
   padding: 5px;
-  font-size: 22px;
+  font-size:20px;
+  margin:auto;
 }
 
 #borform{
 border: 1px solid var(--darkblue-color);
-margin: 1px auto 20px;
+margin: 1px auto 10px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -681,7 +682,7 @@ form{
   }  
   
 .bar1 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 100;
   }
 
@@ -698,6 +699,7 @@ form{
   margin: 15px auto;
   padding: 0 10px;
   color: gray;
+  font-size: 14px;
 }
 
 .datosp{
@@ -713,6 +715,7 @@ form{
   margin: 10px 20px ;
   padding: 0 10px;
   color: gray;
+  font-size: 14px;
 }
 
 .datosp select{
@@ -722,6 +725,7 @@ form{
   margin: 10px 20px ;
   color: gray;
   padding: 0 8px;
+  font-size: 14px;
 }
 
 .datosp{
@@ -737,14 +741,6 @@ form{
   flex-wrap:wrap;
 }
 
-.pr label{
-  width: 100%;
-  height: 30px;
-  margin: 10px auto ;
-  padding: 0 5px;
-  color: gray;
-}
-
 .pr input{
   width: 100%;
   height: 30px;
@@ -752,6 +748,7 @@ form{
   margin: 10px 20px ;
   padding: 0 10px;
   color: gray;
+  font-size: 14px;
 }
 
 .pr select{
@@ -760,34 +757,44 @@ form{
   border: 1px solid var(--blue2-color);
   margin: 10px 15px 10px 20px;
   color: gray;
+  font-size: 14px;
 }
 
 .radio{
-  font-size: 16px;
+  font-size: 14px;
   color: gray;
   display: flex;
   flex-direction: column;
-  margin: 10px 20px; 
   width: 100%;
 }
-.opradio{
-width: 100%;
-display: flex;
-flex-wrap:wrap;
+
+.radio label{
+  width: 100%;
+  height: 15%;
+  margin: 5px auto ;
+  padding: 0 5px;
+  color: gray;
+  text-align: justify;
+  font-size: 14px;
 }
+
 .opradio{
   width: 10%;
   display:flex ;
   align-items: center;
   justify-content: space-around;
-  margin:15px auto ;
+  margin:2px auto ;
   padding: 10px;
 }
 
+.opradio input{
+  margin:auto 10px auto 5px;
+}
+
 #borform button{
-  margin: 10px auto 60px ;
+  margin: 5px auto 40px ;
   background-color: var(--darkorange-color);
-  width: 8%;
+  width:30%;
   color: var(--white-color);
   border: none;
   border-radius: 5px;
@@ -1134,6 +1141,194 @@ font-size: 18px;
 
 .footerdhs{
   top:70.3vh;
+}
+/*Estilo formpacientes*/
+
+.encabezado{
+  flex-direction: row;
+}
+
+#btnform{
+  margin-right:10px;
+}
+
+.btnformuno{
+  width:40px;
+  height:40px;
+  margin: 10px;
+  font-size:24px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--blue-color);
+  width: 99%;
+  border: 1px solid var(--darkblue-color);
+  border-radius: 4px;
+  height: 30px;
+  margin: auto; 
+  width: 100%; 
+}
+
+form{
+  width: 100%;
+}
+
+.bar img {
+  width: 15px;
+  height: 20px;
+} 
+
+.texto{
+  position: relative;
+}
+.icono{
+  position: absolute;
+  left: -32px;
+  top: 12px;
+}   
+  
+.iconodos{
+  position: absolute;
+  left: -20px;
+  top: 11px;
+  }  
+  
+.bar1 {
+  font-size: 16px;
+  font-weight: 100;
+  }
+
+  .initial{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 20px ;
+  }
+  
+.initial input{
+  width:100%;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 15px auto;
+  padding: 0 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.datosp{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.datosp input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 10px 20px ;
+  padding: 0 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.datosp select{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 10px 20px ;
+  color: gray;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+.datosp{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.pr{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.pr input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid var(--blue2-color);
+  margin: 10px 20px ;
+  padding: 0 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.pr select{
+  width:100%;
+  height: 30px;
+  border: 1px solid var(--blue2-color);
+  margin: 10px 15px 10px 20px;
+  color: gray;
+  font-size: 14px;
+}
+
+.radio{
+  font-size: 14px;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.radio label{
+  width: 100%;
+  height: 15%;
+  margin: 5px auto ;
+  padding: 0 5px;
+  color: gray;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.opradio{
+  width: 10%;
+  display:flex ;
+  align-items: center;
+  justify-content: space-around;
+  margin:2px auto ;
+  padding: 10px;
+}
+
+.opradio input{
+  margin:auto 10px auto 5px;
+}
+
+#borform button{
+  margin: 5px auto 40px ;
+  background-color: var(--darkorange-color);
+  width:30%;
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#ftform{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  align-items:flex-start;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 100;
 }
 }
 
