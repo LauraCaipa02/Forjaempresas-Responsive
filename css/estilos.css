@@ -417,30 +417,32 @@ a{
 /*Estilos dashboard*/
 #contdsh{
   display: flex;
+  flex-direction: column;
 }
+
 .bardsh{
   display: flex;
   flex-direction: column;
   background-color: var(--dark-color);
-  flex-basis: 20%;
-  height: 100vh;
-  margin: auto;
-  font-size: 20px;
+  width: 100%;
+  padding: 15px;
+}
+
+.bardsh img{
+  margin:20px auto 10px;
 }
 
 .grupodsh{
-  margin: 45px 0px;
-  height: 70%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
 }
 
 .logoboton{
   display: flex;
-  padding: 30px 0;
-  margin: 60px 0;
 }
+
 .botondsh{
   background-color: var(--grey-color);
   margin: 10px 0;
@@ -448,7 +450,7 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
   border: 3px solid var(--darkorange-color);
   border-radius: 10px;
 }
@@ -456,18 +458,17 @@ a{
 .botondsh a{
   color: var(--dark-color);
   font-weight: 600;
+  font-size: 12px;
 }
 
 .contenidodsh{
   display: flex;
   flex-direction: column;
-  background-color: rgba(238, 237, 237, 0.74);
-  flex-basis: 80%;
-  max-height: 100vh;
-  justify-content: space-between;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: 95%;
+  background-color: rgba(238, 237, 237, 0.74);  justify-content: space-between;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
 }
 
 .grupocontenido{
@@ -477,10 +478,9 @@ a{
 
 #btnuser{
   background: linear-gradient(80deg, rgb(172, 172, 172), rgb(235, 235, 235),rgb(172, 172, 172),rgb(172, 172, 172),rgb(235, 235, 235),rgb(172, 172, 172),rgb(172, 172, 172),rgb(235, 235, 235),rgb(172, 172, 172));
-  width: 16%;
-  margin-left: 1040px;
-  margin-top: 15px;
-  height: 60px;
+  width: 55%;
+  margin: 10px auto;
+  height: 50px;
   border-radius: 10px;
   padding: 15px 0;
   display: flex;
@@ -493,7 +493,7 @@ a{
   margin-right: 10px;
   background-color: var(--white-color);
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px;
   border: 3px solid var(--darkorange-color);
 }
@@ -503,47 +503,49 @@ a{
   margin-right: 10px;
 }
 
-.iconousuario{
-  width: 30px;
-}
-
 .welcome{
   color: var(--darkorange-color);
-  font-size:24px;
-  margin: 50px;
-  padding-right: 50px;
+  font-size:18px;
+  margin: 25px auto;
 }
 
 .welcome h1{
   font-weight: 500;
+  margin: auto;
 }
 
 .search{ 
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-right: 16px;
 }
+
 .search input{
-  width: 330px;
-  height: 30px;
+  width:80%;
   border:none;
   border-bottom: 2px solid var(--darkblue-color);
-  margin: 50px 10px;
-  padding: 0 10px;
+  margin: 25px 10px;
+  font-size: 12px;
   background:none;
   text-align: left;
 }
 
-.search i{
+.bsearch{
+  display: flex;
+}
+
+.bsearch a{
+  display: flex;
+}
+
+.bsearch i{
   background-color: var(--darkblue-color);
   margin: 0 5px ;
-  font-size: 14px;
-  width: 42px;
-  height: 28px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  font-size: 12px;
+  width: 100%;
+  padding: 5px 10px;
   color: var(--white-color);
   border-radius: 5px;
   border:3px solid var(--blue-color);
@@ -555,18 +557,19 @@ a{
 
 .imguerreros{
   position: absolute;
-  right: 30px;
-  top:18px;
+  right: 10px;
+  top:55px;
   transform: rotate(10deg);
   opacity: 0.6;
-  width: 350px;
+  width: 100%;
+  max-width:180px;
 }
 
 .footerdhs{
   display: flex;
   width: 100%;
   position: absolute;
-  top:690px;
+  top:68vh;
 }
 .footerdhs img{
   width: 100%;
@@ -1096,6 +1099,70 @@ font-size: 18px;
   .formu a{
     font-size:13px;
   }
+
+  /*Estilos dashboard*/
+.bardsh img{
+  width: 400px;
+}
+
+.grupodsh{
+  width: 60%;
+  margin: auto;
+}
+
+.botondsh{
+  width:27%;
+}
+
+.botondsh a{
+  font-size: 14px;
+}
+
+.contenidodsh{
+  height: 68.1vh;
+}
+
+#btnuser{
+  width: 25%;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+#btnuser i{
+  font-size: 18px;
+}
+
+#btnuser a{
+  font-size: 16px;
+}
+
+.welcome{
+  font-size:20px;
+  margin: 25px auto 15px;
+}
+
+.search{ 
+  flex-direction: row;
+}
+
+.search input{
+  width:60%;
+  font-size: 14px;
+}
+
+.bsearch i{
+  font-size: 14px;
+}
+
+.imguerreros{
+  right: 40px;
+  top:20px;
+  max-width:200px;
+}
+
+.footerdhs{
+  top:62vh;
+}
 }
 
 @media screen and (min-width:1024px){
@@ -1298,6 +1365,87 @@ margin-top: 25px;
 .formu a{
   font-size:12px;
 }
+/*Estilos dashboard*/
+#contdsh{
+  flex-direction: row;
+  width: 100%;
+}
+.bardsh{
+  width: 25%;
+  height: 100vh;
+  margin: auto;
+  font-size: 20px;
+  padding: 0%;
+}
+
+.grupodsh{
+  margin: 65px 0px;
+  height: 50%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logoboton{
+  display: flex;
+  margin-top: 20px;
+}
+
+.logoboton img{
+  width: 250px;
+}
+
+.botondsh{
+  padding: 10px;
+  width: 100%;
+}
+
+.botondsh a{
+font-size: 16;
+}
+
+.contenidodsh{
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#btnuser{
+  width: 26%;
+  height: 55px;
+}
+
+#btnuser i{
+  font-size: 20px;
+}
+
+.welcome{
+  color: var(--darkorange-color);
+  font-size:22px;
+  margin: 50px auto;
+}
+
+.search input{
+  width:60%;
+  font-size: 16px;
+  padding: auto 15px;
+}
+
+.bsearch i{
+font-size: 16px;
+padding: auto 15px;
+}
+
+.imguerreros{
+  right: 3vh;
+  top:10vh;
+  max-width:300px;
+}
+
+.footerdhs{
+  top:93.99vh;
+}
 }
 
 @media screen and (min-width:1200px){
@@ -1470,6 +1618,64 @@ margin-top: 25px;
     font-size: 13px;
     margin-bottom: 30px;
     } 
+/*Estilos Dashboard*/ 
+.bardsh{
+  width: 20%;
+}
+.grupodsh{
+  height: 35%;
+}
+    
+.logoboton{
+    margin-top: 30%;
+}
+    
+.logoboton img{
+    width: 300px;
+}
+    
+.botondsh{
+  padding: 10px 15px;
+}
+    
+.botondsh a{
+  font-size: 20px;
+}
+
+#btnuser{
+  width: 16%;
+  height: 60px;
+}
+    
+#btnuser i{
+  font-size: 22px;
+}
+    
+.welcome{
+  color: var(--darkorange-color);
+  font-size:24px;
+  padding-right: 50px;
+}
+
+.search input{
+  width:27%;
+  font-size: 18px;
+}
+    
+.bsearch i{
+  font-size: 18px;
+  padding: auto 35px;
+}
+    
+.imguerreros{
+  right: 5vh;
+  top:15vh;
+  max-width:350px;
+}
+    
+.footerdhs{
+  top:91.3vh;
+}
 
 }
 
