@@ -53,6 +53,14 @@
   background-color: var(--darkorange-color);
   border-radius: 50%;
   padding: 7px;
+  animation: tel 0.5s infinite;
+}
+
+@keyframes tel{
+  0%{transform: rotateZ(5deg);}
+  50%{transform: rotateZ(-5deg);}
+  100%{transform: rotate(5deg);}
+
 }
 
 .prtuno{
@@ -96,6 +104,13 @@
   font-size:50px;
   color:var(--darkorange-color);
   margin-bottom:25px;
+  animation: salto 2s infinite;
+}
+
+@keyframes salto {
+  0% { transform: scale(1);}
+  50%{ transform: scale(1.1);}
+  100%{transform: scale(1);}
 }
 
 .franja{
@@ -563,6 +578,16 @@ a{
   opacity: 0.6;
   width: 100%;
   max-width:180px;
+  animation: fotom 1s 5 ease-in-out;
+}
+
+@keyframes fotom {
+  0%{
+  transform: translateY(-15px);
+}
+  100%{
+    transform: translateY(0px);
+  }
 }
 
 .footerdhs{
@@ -604,6 +629,17 @@ a{
   color: var(--dark-color);
   cursor: pointer;
   text-align: center;
+}
+
+.btnformuno i{
+  animation: headf 10s infinite;
+}
+
+@keyframes headf {
+0%{
+  transform:rotatey(0deg);
+}
+100%{transform: rotatey(360deg);}
 }
 
 .fotohead img{
